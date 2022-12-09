@@ -20,7 +20,7 @@ public class App extends Application {
 
         Map<String, Object> defaultValue = new HashMap<>();
         defaultValue.put(UpdateHelper.KEY_UPDATE_ENABLE,false);
-        defaultValue.put(UpdateHelper.KEY_UPDATE_VERSION,"1.0");
+        defaultValue.put(UpdateHelper.KEY_UPDATE_VERSION,BuildConfig.VERSION_NAME);
         defaultValue.put(UpdateHelper.KEY_UPDATE_URL,"https://drive.google.com/file/d/1BlKhCoA3vkh8tJAaScV5wyQ2MxoKoWim/view?usp=share_link");
 
         remoteConfig.setDefaultsAsync(defaultValue);
